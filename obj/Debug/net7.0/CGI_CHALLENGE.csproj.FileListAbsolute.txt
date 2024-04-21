@@ -1,0 +1,15 @@
+C:\Users\melis\CGI_CHALLENGE\bin\Debug\net7.0\CGI_CHALLENGE.exe
+C:\Users\melis\CGI_CHALLENGE\bin\Debug\net7.0\CGI_CHALLENGE.deps.json
+C:\Users\melis\CGI_CHALLENGE\bin\Debug\net7.0\CGI_CHALLENGE.runtimeconfig.json
+C:\Users\melis\CGI_CHALLENGE\bin\Debug\net7.0\CGI_CHALLENGE.dll
+C:\Users\melis\CGI_CHALLENGE\bin\Debug\net7.0\CGI_CHALLENGE.pdb
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.csproj.AssemblyReference.cache
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.AssemblyInfoInputs.cache
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.AssemblyInfo.cs
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.csproj.CoreCompileInputs.cache
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.dll
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\refint\CGI_CHALLENGE.dll
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.pdb
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\CGI_CHALLENGE.genruntimeconfig.cache
+C:\Users\melis\CGI_CHALLENGE\obj\Debug\net7.0\ref\CGI_CHALLENGE.dll
