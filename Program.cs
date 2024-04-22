@@ -8,7 +8,7 @@ string [] answer = new string [MAX_FLASHCARDS];
 
 Console.Clear();
 int userChoice = DisplayMenu();
-while(userChoice != 10)
+while(userChoice != 6)
 {
     Console.Clear();
     RouteEm(userChoice,question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer);
@@ -18,7 +18,7 @@ while(userChoice != 10)
 
 static int DisplayMenu()
 {
-    System.Console.WriteLine("1)Basic Disney Trivia\n2)Advanced Disney Trivia\n3)Park Trivia\n4)Create a new trivia!\n5)Use a custom trivia");
+    System.Console.WriteLine("1)Basic Disney Trivia\n2)Advanced Disney Trivia\n3)Park Trivia\n4)Create a new trivia!\n5)Use a custom trivia\n6)Exit menu");
     return int.Parse(System.Console.ReadLine());
 }
 
@@ -60,6 +60,7 @@ static void DisneyTrivia()
     while(userChoice != 2)
     {
     TriviaRules();
+    Console.Clear();
     DisneyTriviaRoundOne(ref points);
     DisneyTriviaRoundTwo(ref points);
     DisneyTriviaRoundThree(ref points);
@@ -78,8 +79,8 @@ static int UserChoice()
 
 static void TriviaRules()
 {
-    System.Console.WriteLine("Before you begin.... here are the rules \n You will be presented with a question and 4 possible answers\n press 1,2,3,or 4 to submit your answer\nIf you get the answer correct, you will be awarded 100 points\nGood Luck!!!!!!!");
-
+    Console.Clear();
+    System.Console.WriteLine("Before you begin.... here are the rules \nYou will be presented with a question and 4 possible answers\nPress 1,2,3,or 4 to submit your answer\nIf you get the answer correct, you will be awarded 100 points\nGood Luck!!!!!!!");
     System.Console.WriteLine("Press any key to continue");
     Console.ReadKey();
 }
@@ -93,7 +94,7 @@ static void DisneyTriviaRoundOne(ref int points)
     if(userChoice == 1)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -112,7 +113,7 @@ static void DisneyTriviaRoundTwo(ref int points)
     if(userChoice == 2)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -132,7 +133,7 @@ static void DisneyTriviaRoundThree(ref int points)
     if(userChoice == 1)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -152,7 +153,7 @@ static void DisneyTriviaRoundFour(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -171,7 +172,7 @@ static void DisneyTriviaRoundFive(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -209,7 +210,7 @@ static void AdvancedTriviaRoundOne(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -228,7 +229,7 @@ static void AdvancedTriviaRoundTwo(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -247,7 +248,7 @@ static void AdvancedTriviaRoundThree(ref int points)
     if(userChoice == 1)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -266,7 +267,7 @@ static void AdvancedTriviaRoundFour(ref int points)
     if(userChoice == 2)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -285,7 +286,7 @@ static void AdvancedTriviaRoundFive(ref int points)
     if(userChoice == 4)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -302,6 +303,7 @@ static void ParkTrivia()
     while(userChoice != 2)
     {
     TriviaRules();
+    Console.Clear();
     ParkTriviaRoundOne(ref points);
     ParkTriviaRoundTwo(ref points);
     ParkTriviaRoundThree(ref points);
@@ -321,7 +323,7 @@ static void ParkTriviaRoundOne(ref int points)
     if(userChoice == 1)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -340,7 +342,7 @@ static void ParkTriviaRoundTwo(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -360,7 +362,7 @@ static void ParkTriviaRoundThree(ref int points)
     if(userChoice == 1)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -380,7 +382,7 @@ static void ParkTriviaRoundFour(ref int points)
     if(userChoice == 3)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -399,7 +401,7 @@ static void ParkTriviaRoundFive(ref int points)
     if(userChoice == 4)
     {
         points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -436,6 +438,13 @@ static int GetExistingTrivia(string [] question, string [] possibleAnswer1, stri
 static void NewTrivia(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer)
 {
     int count = 0;
+    System.Console.WriteLine("Would you like to create a new trivia? Press 1 to create a new trivia and 2 to go back to the menu");
+    int userChoice = int.Parse(Console.ReadLine());
+    Console.Clear();
+    while(userChoice !=2)
+    {
+    
+    System.Console.WriteLine("You will create 5 questions, each with 4 possible answers\nAfter creating the question and answers, you will be prompted to enter the correct answer\nHave fun!!!");
     while(count < 5)
     {
         System.Console.WriteLine("What question would you like to ask?");
@@ -452,6 +461,7 @@ static void NewTrivia(string [] question, string [] possibleAnswer1, string [] p
         answer[count] = Console.ReadLine();
         // outFile.WriteLine($"{question[count]}#{possibleAnswer1[count]}#{possibleAnswer2[count]}#{possibleAnswer3[count]}#{possibleAnswer4[count]}#{answer[count]}");
         count++;
+        Console.Clear();
     }
     System.Console.WriteLine("What file would you like to save this to?");
     string userChoiceToSaveFile = Console.ReadLine().ToLower();
@@ -460,32 +470,44 @@ static void NewTrivia(string [] question, string [] possibleAnswer1, string [] p
    {
      outFile.WriteLine($"{question[i]}#{possibleAnswer1[i]}#{possibleAnswer2[i]}#{possibleAnswer3[i]}#{possibleAnswer4[i]}#{answer[i]}");
    }
+   System.Console.WriteLine($"{userChoiceToSaveFile}");
     for(int i = 0; i < count; i++)  
     {
     System.Console.WriteLine($"{question[i]}#{possibleAnswer1[i]}#{possibleAnswer2[i]}#{possibleAnswer3[i]}#{possibleAnswer4[i]}#{answer[i]}");
     }
     outFile.Close();
+    System.Console.WriteLine("Would you like to create a new trivia? Press 1 to create a new trivia and 2 to go back to the menu");
+    userChoice = int.Parse(Console.ReadLine());
+    }
 }
 
 static void UseCustomTrivia(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
 {
-RoundOne(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count);
-RoundTwo(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count);
-RoundThree(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count);
-RoundFour(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count);
-RoundFive(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count);
+int points = 0;
+int userChoice = UserChoice();
+while(userChoice != 2)
+{
+TriviaRules();
+Console.Clear();
+RoundOne(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count, ref points);
+RoundTwo(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count,ref points);
+RoundThree(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count,ref points);
+RoundFour(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count,ref points);
+RoundFive(question,possibleAnswer1, possibleAnswer2, possibleAnswer3,possibleAnswer4,answer,count,ref points);
+System.Console.WriteLine($"Total Points from game: {points}");
+userChoice = UserChoice();
+}
 }
 
-static void RoundOne(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
+static void RoundOne(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count, ref int points)
 {
-int points = 0;
-System.Console.WriteLine($"{question[0]}\n1){possibleAnswer1[0]}\n2){possibleAnswer2[0]}\n3){possibleAnswer3[0]}\nn4){possibleAnswer4[0]}");
+System.Console.WriteLine($"{question[0]}\n1){possibleAnswer1[0]}\n2){possibleAnswer2[0]}\n3){possibleAnswer3[0]}\n4){possibleAnswer4[0]}");
 int userChoice = int.Parse(Console.ReadLine());
 int correctAnswer = int.Parse(answer[0]);
 if(userChoice == correctAnswer)
 {
     points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -495,16 +517,15 @@ if(userChoice == correctAnswer)
     Console.Clear();
 }
 
-static void RoundTwo(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
+static void RoundTwo(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count,ref int points)
 {
-int points = 0;
-System.Console.WriteLine($"{question[1]}\n1){possibleAnswer1[1]}\n2){possibleAnswer2[1]}\n3){possibleAnswer3[1]}\nn4){possibleAnswer4[1]}");
+System.Console.WriteLine($"{question[1]}\n1){possibleAnswer1[1]}\n2){possibleAnswer2[1]}\n3){possibleAnswer3[1]}\n4){possibleAnswer4[1]}");
 int userChoice = int.Parse(Console.ReadLine());
 int correctAnswer = int.Parse(answer[1]);
 if(userChoice == correctAnswer)
 {
     points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -514,16 +535,15 @@ if(userChoice == correctAnswer)
     Console.Clear();
 }
 
-static void RoundThree(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
+static void RoundThree(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count,ref int points)
 {
-int points = 0;
-System.Console.WriteLine($"{question[2]}\n1){possibleAnswer1[2]}\n2){possibleAnswer2[2]}\n3){possibleAnswer3[2]}\nn4){possibleAnswer4[2]}");
+System.Console.WriteLine($"{question[2]}\n1){possibleAnswer1[2]}\n2){possibleAnswer2[2]}\n3){possibleAnswer3[2]}\n4){possibleAnswer4[2]}");
 int userChoice = int.Parse(Console.ReadLine());
 int correctAnswer = int.Parse(answer[2]);
 if(userChoice == correctAnswer)
 {
     points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -533,16 +553,15 @@ if(userChoice == correctAnswer)
     Console.Clear();
 }
 
-static void RoundFour(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
+static void RoundFour(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count,ref int points)
 {
-int points = 0;
-System.Console.WriteLine($"{question[3]}\n1){possibleAnswer1[3]}\n2){possibleAnswer2[3]}\n3){possibleAnswer3[3]}\nn4){possibleAnswer4[3]}");
+System.Console.WriteLine($"{question[3]}\n1){possibleAnswer1[3]}\n2){possibleAnswer2[3]}\n3){possibleAnswer3[3]}\n4){possibleAnswer4[3]}");
 int userChoice = int.Parse(Console.ReadLine());
 int correctAnswer = int.Parse(answer[3]);
 if(userChoice == correctAnswer)
 {
     points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
@@ -552,16 +571,15 @@ if(userChoice == correctAnswer)
     Console.Clear();
 }
 
-static void RoundFive(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count)
+static void RoundFive(string [] question, string [] possibleAnswer1, string [] possibleAnswer2, string [] possibleAnswer3, string [] possibleAnswer4,string [] answer, int count,ref int points)
 {
-int points = 0;
-System.Console.WriteLine($"{question[4]}\n1){possibleAnswer1[4]}\n2){possibleAnswer2[4]}\n3){possibleAnswer3[4]}\nn4){possibleAnswer4[4]}");
+System.Console.WriteLine($"{question[4]}\n1){possibleAnswer1[4]}\n2){possibleAnswer2[4]}\n3){possibleAnswer3[4]}\n4){possibleAnswer4[4]}");
 int userChoice = int.Parse(Console.ReadLine());
 int correctAnswer = int.Parse(answer[4]);
 if(userChoice == correctAnswer)
 {
     points = points + 100;
-        System.Console.WriteLine("Congradulations, you got it correct!!!!! You have been awarded 100 points");
+        System.Console.WriteLine("Congratulations, you got it correct!!!!! You have been awarded 100 points");
     }else
     {
         System.Console.WriteLine("Better Luck next time!!!");
